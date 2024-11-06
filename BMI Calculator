@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+    float bmi,wei,hei;
+    printf("\n Enter your height ");
+    scanf("%f",&hei);
+    printf("\n Enter your weight ");
+    scanf("%f",&wei);
+    
+    bmi=wei/(hei*hei);
+    printf("\n The BMI of your body is %.1f ",bmi);
+}
