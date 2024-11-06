@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+    int x=108,y,z;
+    
+    printf("\n Total number of seats that bus can hold %d",x);
+    printf("\n Enter the number of rows that bus can have ");
+    scanf("%d",&y);
+    
+    z=x/y;
+    printf("\n The total number of seats in each row %d",z);
+}
