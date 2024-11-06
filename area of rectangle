@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    float rad,area,peri,len,wid;
+    printf("\n Enter the Length of the Rectangle");
+    scanf("%f",&len);
+    printf("\n Enter the Width of the Rectangle");
+    scanf("%f",&wid);
+    
+    area=len*wid;
+    printf("\n The area of the Rectangle is %.2f ",area);
+    
+    peri=2*(len+wid);
+    printf("\n The Perimeter of the Rectangle %.2f",peri);
+}
+
+
