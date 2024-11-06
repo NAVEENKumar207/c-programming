@@ -1,0 +1,35 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    char ari;
+    
+    printf("\n Enter two numbers:  ");
+    scanf("%d %d",&a,&b);
+    printf("\n Enter the arithmetic operator ");
+    scanf(" %c",&ari);
+    
+    
+    switch(ari)
+    {
+    
+    case '+':
+    printf("\n Addition of two numbers %d",a+b);
+    break;
+    
+    case '-':
+    printf("\n subraction of two numbers %d",a-b);
+    break;
+    
+    case '*':
+    printf("\n Multiplication of two numbers %d",a*b);
+    break;
+    
+    case '/':
+    printf("\n Division of two numbers %d",a/b);
+    break;
+    
+    default:
+       printf(" issue");
+    }
+}
