@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    double p,r,t,n,si,co;
+    printf("\n Enter the principle amount ");
+    scanf("%lf",&p);
+    printf("\n Enter the rate of interst ");
+    scanf("%lf",&r);
+    printf("\n Enter the time period ");
+    scanf("%lf",&t);
+    printf("\n Enter the number of interest per time period ");
+    scanf("%lf",&n);
+    
+    si=(p*r*t)/100;
+    printf("\n The simple interest of the given values is %.1f ",si);
+    
+    co=p*pow((1+r/n),(n*t));
+    printf("\n The compound interest of the given values is %.1f ",co);
+}
