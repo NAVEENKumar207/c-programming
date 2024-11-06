@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+    int x=50525,y=40399,c;
+    c=x+y;
+    printf("The number of first edition copies are %d",x);
+    printf("\n The number of first edition copies are %d",y);
+    printf("\n The total number of copies published are %d",c);
+}
