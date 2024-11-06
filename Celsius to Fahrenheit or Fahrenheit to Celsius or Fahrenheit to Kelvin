@@ -3,13 +3,13 @@
 void main() {
     int choice;
     float c,f;
-    printf("1)Celsius to Fahrenheit \n2)Fahrenheit to Celsius");
+    printf("1)Celsius to Fahrenheit \n2)Fahrenheit to Celsius \n3)Fahrenheit to Kelvin");
     
-    printf("\nEnter your  choice(0 or 1): ");
+    printf("\nEnter your  choice(1 or 2 or 3): ");
     scanf("%d",&choice);
     switch(choice)
     {
-        case 0:
+        case 1:
         {
             printf("\nYour choice is to find Celsius to Fahrenheit");
             printf("\nEnter the celsius");
@@ -24,7 +24,7 @@ void main() {
             }
             break;
         }
-        case 1:
+        case 2:
         {
             printf("Enter the Fahrenheit ");
             scanf("%f",&f);
@@ -32,6 +32,21 @@ void main() {
                 float fc;
                 fc=(f-32)*5/9;
                 printf("The  is Celsius %.2f",fc);
+            }
+            else{
+                printf("You entered a wrong number or negative number");
+                
+            }
+        break;
+        }
+        case 3:
+        {
+            printf("Enter the Fahrenheit ");
+            scanf("%f",&f);
+            if(f<=134.1&&f>=0){
+                float fk;
+                fk=(f-32)*5/9+273.15;
+                printf("The  is Kelvin %.2f",fk);
             }
             else{
                 printf("You entered a wrong number or negative number");
