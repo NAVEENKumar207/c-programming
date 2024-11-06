@@ -3,39 +3,42 @@
 void main() {
     int choice;
     float c,f;
-    printf("What did You want to find Celsius to Fahrenheit or Fahrenheit to Celsius");
-    printf("\nEnter 0 to find Celsius to Fahrenheit or 1 to find Fahrenheit to Celsius ");
-    scanf("%d",choice);
+    printf("1)Celsius to Fahrenheit \n2)Fahrenheit to Celsius");
+    
+    printf("\nEnter your  choice(0 or 1): ");
+    scanf("%d",&choice);
     switch(choice)
     {
         case 0:
-        
-        printf("Your choice is to find Celsius to Fahrenheit");
-        printf("Enter the celsius");
-        scanf("%.2f",c);
-        
-         if(c<=56.7 && c>=0)
-         {
-             int cf;
-             cf=(c*9/5)+32;
-             printf("The Fahrenheit is %.2f",cf);
-         }
-        else
-          printf("You entered a wrong number or negative number");
-        
+        {
+            printf("\nYour choice is to find Celsius to Fahrenheit");
+            printf("\nEnter the celsius");
+            scanf("%f",&c);
+            if(c<=56.7 && c>=0){
+                float cf;
+                cf=(c*9/5)+32;
+                printf("\nThe Fahrenheit is %.2f",cf);
+            }
+            else{
+                printf("\nYou entered a wrong number or negative number");
+            }
+            break;
+        }
         case 1:
-        
-        printf("Your choice is to find Fahrenheit to Celsius");
-        printf("Enter the Fahrenheit ");
-        scanf("%.2f",f);
-        
-         if(f<=134.1&&f>=0)
-         {
-             int fc;
-             fc=(f-32)*5/9;
-             printf("The  is Celsius %.2f",fc);
-         }
-        else
-          printf("You entered a wrong number or negative number");
+        {
+            printf("Enter the Fahrenheit ");
+            scanf("%f",&f);
+            if(f<=134.1&&f>=0){
+                float fc;
+                fc=(f-32)*5/9;
+                printf("The  is Celsius %.2f",fc);
+            }
+            else{
+                printf("You entered a wrong number or negative number");
+                
+            }
+        break;
+        }
     }
+    
 }
