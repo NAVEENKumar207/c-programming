@@ -26,9 +26,16 @@ void main()
     break;
     
     case '/':
-    printf("\n Division of two numbers %d",a/b);
-    break;
-    
+
+     if(num2==0);
+        {
+          printf(" 0 is not possible);
+        }
+    else
+        { 
+        printf("%d",num1/num2);
+        break;
+       }  
     default:
        printf(" issue");
     }
