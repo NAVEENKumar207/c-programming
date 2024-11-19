@@ -1,0 +1,31 @@
+#include <stdio.h>
+int sum(int, int);
+
+int sum(int x, int y)
+{
+	int sum;
+	sum = x + y;
+	return x + y;
+}
+
+int main()
+{
+    printf("This Is the Program for Return type And With arguments");
+	int x,y;
+	printf("\nEnter the First value ");
+	scanf("%d",&x);
+    printf("Enter the Second value ");
+	scanf("%d",&y);
+	int result = sum(x, y);
+	printf("Sum of %d and %d = %d ", x, y, result);
+
+	return 0;
+}
+-------------------------------------------------------------------------------------
+Output:
+
+This Is the Program for Return type And With arguments
+Enter the First value 5
+Enter the Second value 6
+Sum of 5 and 6 = 11 
+********************************************************************************************************
