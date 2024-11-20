@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main() {
+    int num, r, sum = 0;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    int t = num;
+
+    while (t!= 0) {
+        r = t % 10;
+        sum = sum * 10 + r;
+        t = t / 10;
+    }
+
+    printf("The number in reverse order is %d", sum);
+}
+-------------------------------------------------------------------
+Output:
+Enter the number: 255
+The number in reverse order is 552
