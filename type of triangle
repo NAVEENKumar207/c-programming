@@ -1,0 +1,36 @@
+Coding :
+
+#include<stdio.h>
+void main()
+{
+    
+    float s1,s2,s3;
+    printf("\nEnter the first side of the Triangle ");
+    scanf("%f",&s1);
+    printf("\nEnter the second side of the Triangle ");
+    scanf("%f",&s2);
+    printf("\nEnter the third side of the Triangle ");
+    scanf("%f",&s3);
+    
+    if(s1==s2 && s2==s3)
+    {
+        printf("\nIt is a Equilateral Triangle");
+    }
+    else if(s1==s2 || s2==s3 || s3==s1)
+    {
+        printf("\nIt is a Isosceles Triangle");
+    }
+    else
+    {
+        printf("\nIt is a Scalene Triangle");
+    }
+}
+Output :
+
+Enter the first side of the Triangle 30
+
+Enter the second side of the Triangle 35
+
+Enter the third side of the Triangle 30
+
+It is a Isosceles Triangle
