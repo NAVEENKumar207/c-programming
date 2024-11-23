@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int num,p,d,sum=0;
+    printf("Enter the number ");
+    scanf("%d",&num);
+    printf("Enter the power ");
+    scanf("%d",&p);
+    int temp=num;
+    while(temp>0)
+    {
+        d=temp%10;
+        sum+=pow(d,p);
+        temp/=10;
+    }
+    printf("The sum of the digit of %d raised to its power %d is %d",num,p,sum);
+}
+-----------------------------------------------------------------------------------
+Output :
+Enter the number 153
+Enter the power 3
+The sum of the digit of 153 raised to its power 3 is 153
