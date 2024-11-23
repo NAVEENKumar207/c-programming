@@ -15,5 +15,15 @@ void main() {
             largest = arr[i];
         }
     }
-    printf("The largest element in the array is: %d\n", largest);
+    printf("\nThe largest element in the array is: %d\n", largest);
 }
+--------------------------------------------------------------------
+Output :
+Enter the number of the elements in the array: 5
+Enter the 0th elements of the array: 25
+Enter the 1th elements of the array: 68
+Enter the 2th elements of the array: 95
+Enter the 3th elements of the array: 55
+Enter the 4th elements of the array: 36
+
+The largest element in the array is: 95
