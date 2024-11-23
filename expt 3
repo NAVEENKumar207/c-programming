@@ -1,0 +1,54 @@
+Low
+
+#include <stdio.h>
+
+void main() {
+    int num, r, sum = 0;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    int t = num;
+
+    while (t!= 0) {
+        r = t % 10;
+        sum = sum * 10 + r;
+        t = t / 10;
+    }
+
+    printf("The number in reverse order is %d", sum);
+}
+
+Medium
+
+#include<stdio.h>
+void main()
+{
+    int num,i,sum=0;
+    printf("Enter the natural number ");
+    scanf("%d",&num);
+    for(int i=0;i<=num;i++)
+    {
+        sum=sum+i;
+    }
+    printf("the sum of first %d numbers is %d",num,sum);
+}
+
+High
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int num,p,d,sum=0;
+    printf("Enter the number ");
+    scanf("%d",&num);
+    printf("Enter the power ");
+    scanf("%d",&p);
+    int temp=num;
+    while(temp>0)
+    {
+        d=temp%10;
+        sum+=pow(d,p);
+        temp/=10;
+    }
+    printf("The sum of the digit of %d raised to its power %d is %d",num,p,sum);
+}
