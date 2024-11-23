@@ -2,7 +2,7 @@
 void main()
 {
     char ch;
-    printf("Enter a character");
+    printf("Enter a Alphabet ");
     scanf("%c",&ch);
     switch(ch)
     {
@@ -25,9 +25,9 @@ void main()
 }
 -----------------------------------------------------
 Output1 :
-Enter a character a
+Enter a Alphabet a
 You Entered a vowel
 
 Output2 :
-Enter a character j
+Enter a Alphabet j
 You Entered a Consonant
