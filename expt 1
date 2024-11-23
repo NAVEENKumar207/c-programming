@@ -1,0 +1,53 @@
+Low
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    double p,r,t,n,i,amount;
+    printf("\n Enter the principle amount: ");
+    scanf("%lf",&p);
+    printf("\n Enter the rate: ");
+    scanf("%lf",&r);
+    printf("\n Enter the time:");
+    scanf("%lf",&t);
+    printf("\n Enter the number of interest per year: ");
+    scanf("%lf",&n);
+    
+    
+    amount=p*pow((1+r/n),(n*t));
+    i=amount-p;
+    printf("\n The compound interest %.1f ",i);
+    printf("\nThe total amount: %.2f ",amount);
+}
+
+medium
+
+#include<stdio.h>
+void main()
+{
+    int x=108,y,z;
+    
+    printf("\n Total number of seats that bus can hold %d",x);
+    printf("\n Enter the number of rows that bus can have ");
+    scanf("%d",&y);
+    
+    z=x/y;
+    printf("\n The total number of seats in each row %d",z);
+}
+
+High
+
+#include<stdio.h>
+void main()
+{
+    float pi=3.14,rad,area,circum;
+    printf("\n Enter the Radius of the circle");
+    scanf("%f",&rad);
+    
+    area=pi*rad*rad;
+    printf("\n The area of the circle is %.2f ",area);
+    
+    circum=2*pi*rad;
+    printf("\n The circumference of the circle %.2f",circum);
+}
