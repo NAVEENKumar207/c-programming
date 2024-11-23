@@ -10,7 +10,7 @@ int sum(int x, int y)
 
 int main()
 {
-    printf("This Is the Program for Return type And With arguments");
+    printf("This Is the Program for with Return type And With arguments");
 	int x,y;
 	printf("\nEnter the First value ");
 	scanf("%d",&x);
