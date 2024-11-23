@@ -6,7 +6,7 @@ void main() {
     int arr[n];
     for (int i = 0; i < n; i++) 
     {
-        printf("Enter the %dth elements of the array: ",i);
+        printf("Enter the %dth element : ",i);
         scanf("%d", &arr[i]);
     }
     
@@ -22,11 +22,11 @@ void main() {
 }
 --------------------------------------------------------------------
 Output :
-Enter the number of the elements in the array: 5
-Enter the 0th elements of the array: 25
-Enter the 1th elements of the array: 68
-Enter the 2th elements of the array: 95
-Enter the 3th elements of the array: 55
-Enter the 4th elements of the array: 36
+Enter the size of the array: 5
+Enter the 0th element : 25
+Enter the 1th element : 68
+Enter the 2th element : 95
+Enter the 3th element : 55
+Enter the 4th element : 36
 
 The largest element in the array is: 95
