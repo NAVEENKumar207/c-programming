@@ -1,0 +1,32 @@
+Coding:
+#include <stdio.h>
+void swap(int,int);
+void swap1(int*,int*);
+void main() {
+    int a=10,b=20;
+    printf("Before swaping a=%d,b=%d",a,b);
+    swap(a,b);
+    printf("\nAfter swaping by call by value a=%d,b=%d",a,b);
+    swap1(&a,&b);
+    printf("\nAfter swaping by call by reference a=%d,b=%d",a,b);
+}
+void swap(int x,int y)
+{
+    int te;
+    te=x;
+    x=y;
+    y=te;
+}
+void swap1(int*x,int*y)
+{
+    int te;
+    te=*x;
+    *x=*y;
+    *y=te;
+}
+--------------------------------------------------------------------------
+Output:
+
+Before swaping a=10,b=20
+After swaping by call by value a=10,b=20
+After swaping by call by reference a=20,b=10
