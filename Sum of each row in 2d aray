@@ -1,6 +1,7 @@
 Coding:
 #include <stdio.h>
-void main() {
+void main() 
+{
     int row,coloumn,matrix[10][10];
     printf("Enter the number of Rows ");
     scanf("%d",&row);
