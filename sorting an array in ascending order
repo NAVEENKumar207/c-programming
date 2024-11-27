@@ -1,0 +1,51 @@
+Coding:
+#include <stdio.h>
+void main ()
+{
+    int num[20];
+    int i, j, temp, n,k;
+    printf("Enter size of the array ");
+    scanf("%d", &n);
+    for (i = 0,k=1; i < n,k<=n; i++,k++)
+    {
+        printf("Enter the element %dth ",k);
+        scanf("%d", &num[i]);
+    }
+
+    for (i = 0; i < n;i++) {
+        for (j = i + 1; j < n;j++)
+        {
+            if (num[i] > num[j]) 
+            {
+                temp = num[i];
+                num[i] = num[j];
+                num[j] = temp;
+            }
+        }
+    }
+    printf("The numbers in ascending order is:\n");
+    for (i = 0; i < n; ++i)
+    {
+        printf("%d , ", num[i]);
+    }
+}
+-------------------------------------------------------------------
+Output:
+Enter size of the array 4
+Enter the 1th element 2
+Enter the 2th element 6
+Enter the 3th element 4
+Enter the 4th element 8
+The numbers in ascending order is:
+ 2 
+ 4 
+ 6 
+ 8 
+
+
+
+
+
+
+
+
