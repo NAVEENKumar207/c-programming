@@ -215,14 +215,41 @@ The string is converted as KSRCT
 HARD
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 **************************************************************************************
-1 . 
-  ★ Note: .
+1 . To replace the spaces in a string with specific character.
+  ★ Note: You can give anything for character.
 **************************************************************************************
 Coding:
-
+#include <stdio.h>
+void main() 
+{
+    printf("☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼");
+    printf("\n Program By TMS  I-year B.Tech CSBS");
+    printf("\n ☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼\n");
+    char a[100];
+    char rc;
+    int i = 0;
+    printf("Enter a string: ");
+    scanf("%[^\n]", a);
+    printf("Enter a character to replace white spaces: ");
+    scanf(" %c", &rc);
+    while (a[i] != '\0') 
+    {
+        if (a[i] == ' ') 
+        {
+            a[i] = rc;
+        }
+        i++;
+    }
+    printf("Modified string: %s\n", a);
+}
 --------------------------------------------------------------------------------------
 Output:
-
+☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼
+Program By TMS  I-year B.Tech CSBS
+☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼
+Enter a string: I was a beautiful day
+Enter a character to replace white spaces: *
+Modified string: I*was*a*beautiful*day
 **************************************************************************************
 2 . 
   ★ Note: .
