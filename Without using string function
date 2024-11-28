@@ -1,0 +1,16 @@
+Coding:
+#include <stdio.h>
+void main()
+{
+ int cou=0;
+ char str[10];
+ printf("Enter the string to calculate the length ");
+ scanf("%s",&str);
+ for(int i=0;str[i]!='\0';i++)
+ {
+     cou++;
+ }
+ printf("The length of the strig is %d",cou);
+}
+----------------------------------------------------------
+Output:
