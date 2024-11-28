@@ -20,7 +20,7 @@ Output:
 Enter the string to calculate the length ksrct
 The length of the string is 5
 ------------------------------------------------------------------
-Catenation of two string Without using strlen function
+Catenation of two string Without using strcat function
 -----------------------------------------------------------------------
 Coding:
 #include <stdio.h>
