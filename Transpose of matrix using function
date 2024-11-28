@@ -1,0 +1,78 @@
+#include<stdio.h>
+int transpose[10][10];
+void get(int matrix[][10],int r,int c)
+{
+    
+    for (int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+                printf("Enter the element of matrix[%d][%d]:",i,j);
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+}
+void disp(int matrix[][10],int r,int c)
+{
+     for (int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            printf("%d ",matrix[i][j]);
+            transpose[i][j]=matrix[i][j];
+        }
+        printf("\n");
+    }
+    
+}
+void trans(int matrix[][10],int r,int c)
+{
+    for (int i=0;i<c;i++)
+    {
+        for(int j=0;j<r;j++)
+        {
+            printf("%d ",transpose[j][i]);
+        }
+        printf("\n");
+    }
+}
+void main()
+{
+    int matrix[10][10];
+    int r,c;
+    printf("Enter the number of rows : ");
+    scanf("%d",&r);
+    printf("Enter the number of coloumns : ");
+    scanf("%d",&c);
+    get(matrix,r,c);
+    
+    printf("\nDisplaying the matrix\n");
+    disp(matrix,r,c);
+    
+    printf("\nTransposed matrix\n");
+    trans(matrix,r,c);
+    
+}
+*********************************************************
+Output:
+Enter the number of rows : 3
+Enter the number of coloumns : 3
+Enter the element of matrix[0][0]:1
+Enter the element of matrix[0][1]:2
+Enter the element of matrix[0][2]:3
+Enter the element of matrix[1][0]:4
+Enter the element of matrix[1][1]:5
+Enter the element of matrix[1][2]:6
+Enter the element of matrix[2][0]:7
+Enter the element of matrix[2][1]:8
+Enter the element of matrix[2][2]:9
+
+Displaying the matrix
+1 2 3 
+4 5 6 
+7 8 9 
+
+Transposed matrix
+1 4 7 
+2 5 8 
+3 6 9 
