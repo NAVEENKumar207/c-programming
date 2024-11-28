@@ -115,18 +115,20 @@ Enter the string First string  ksrct
 Enter the string Second string  ksrce
 Strings are not same
 ---------------------------------------------------------
-Reverse of the string
+Reverse of the string Without using string functions
 ----------------------------------------------------------
 #include <stdio.h>
-#include<string.h>
 void main()
 {
- 
  char str[100];
- int i=0,temp;
+ int i=0,temp,length=0;
  printf("Enter the string  ");
  scanf("%s",str);
- int j=strlen(str)-1;
+ while (str[length] != '\0')
+    { 
+        length++;
+    }
+ int j=length-1;
  while(i<j)
     {
         temp=str[i];
@@ -135,7 +137,6 @@ void main()
         i++,j--;
     }
     printf("The reverse of the Strings is %s",str);
-    
 }
 ------------------------------------------------------------
 Output:
