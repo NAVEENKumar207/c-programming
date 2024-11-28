@@ -1,4 +1,6 @@
+-----------------------------------------------------
 Length of the string Without using strlen function
+-----------------------------------------------------
 Coding:
 #include <stdio.h>
 void main()
@@ -18,18 +20,21 @@ Output:
 Enter the string to calculate the length ksrct
 The length of the string is 5
 ------------------------------------------------------------------
+Catenation of two string Without using strlen function
+-----------------------------------------------------------------------
+Coding:
 #include <stdio.h>
 void main()
 {
  
- char str1[100],str2[100];
+ char str1[100];
+ char str2[100];
  printf("Enter the string First string  ");
  scanf("%s",str1);
  printf("Enter the string Second string  ");
  scanf("%s",str2);
  int i=0,j=0;
  while(str1[i]!='\0')
- {
     i++;
     while(str2[j]!='\0')
     {
@@ -37,7 +42,97 @@ void main()
      i++;
      j++;
     }
- }
- str1[i]='\0';
- printf("The String is %s",str1);
+    str1[i]='\0';
+ 
+ 
+ printf("Concatenated String is %s",str1);
+}
+--------------------------------------------------------------
+Output:
+Enter the string First string  Naveen
+Enter the string Second string  kumar
+Concatenated String is Naveenkumar
+---------------------------------------------------------------
+Copy one string to another string Without using strcpy function
+---------------------------------------------------------------
+Coding:--Wrong
+#include <stdio.h>
+void main()
+{
+ 
+ char str1[100];
+ char str2[100];
+ printf("Enter the string string  ");
+ scanf("%s",str1);
+ int i=0,j=0;
+ while(str1[i]!='\0')
+    while(str2[j++]!='\0')
+    {
+     i++;
+     str2[j]=str1[i];
+    }
+    str1[i]='\0';
+ printf("The value in 2nd array is ",str2);
+ 
+}
+------------------------------------------------------------------
+Comaring two String Without using strcmp function
+--------------------------------------------------------------------
+Coding:
+#include <stdio.h>
+void main()
+{
+ 
+ char str1[100];
+ char str2[100];
+ printf("Enter the string First string  ");
+ scanf("%s",str1);
+ printf("Enter the string Second string  ");
+ scanf("%s",str2);
+ int i=0,flag=0;
+ while(str1[i]!='\0'&&str2[i]!='\0')
+    {
+        if(str1[i]!=str2[i])
+        {
+            flag=1;
+            break;
+        }
+        i++;
+    }
+    if(flag==0)
+    printf("Strings are same");
+    else
+    printf("Strings are not same");
+}
+--------------------------------------------------------
+Output1:
+Enter the string First string  ksrct
+Enter the string Second string  ksrct
+Strings are same
+Output2:
+Enter the string First string  ksrct
+Enter the string Second string  ksrce
+Strings are not same
+---------------------------------------------------------
+
+----------------------------------------------------------
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+ 
+ char str[100];
+ int i=0,temp;
+ printf("Enter the string  ");
+ scanf("%s",str);
+ int j=strlen(str)-1;
+ while(i<j)
+    {
+        temp=str[i];
+        str[i]=str[j];
+        str[j]=temp;
+        i++,j--;
+    }
+    printf("The reverse of the Strings is %s",str);
+    
 }
