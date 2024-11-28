@@ -114,7 +114,7 @@ Enter the string First string  ksrct
 Enter the string Second string  ksrce
 Strings are not same
 ---------------------------------------------------------
-
+Reverse of the string
 ----------------------------------------------------------
 #include <stdio.h>
 #include<string.h>
@@ -136,3 +136,8 @@ void main()
     printf("The reverse of the Strings is %s",str);
     
 }
+------------------------------------------------------------
+Output:
+Enter the string  ksrct
+The reverse of the Strings is tcrsk
+------------------------------------------------------------
