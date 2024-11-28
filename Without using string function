@@ -1,3 +1,4 @@
+Length of the string Without using strlen function
 Coding:
 #include <stdio.h>
 void main()
@@ -10,7 +11,33 @@ void main()
  {
      cou++;
  }
- printf("The length of the strig is %d",cou);
+ printf("The length of the string is %d",cou);
 }
 ----------------------------------------------------------
 Output:
+Enter the string to calculate the length ksrct
+The length of the string is 5
+------------------------------------------------------------------
+#include <stdio.h>
+void main()
+{
+ 
+ char str1[100],str2[100];
+ printf("Enter the string First string  ");
+ scanf("%s",str1);
+ printf("Enter the string Second string  ");
+ scanf("%s",str2);
+ int i=0,j=0;
+ while(str1[i]!='\0')
+ {
+    i++;
+    while(str2[j]!='\0')
+    {
+     str1[i]=str2[j];
+     i++;
+     j++;
+    }
+ }
+ str1[i]='\0';
+ printf("The String is %s",str1);
+}
