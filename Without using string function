@@ -141,4 +141,33 @@ void main()
 Output:
 Enter the string  ksrct
 The reverse of the Strings is tcrsk
-------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Converting uppercase and lowercase character in a string without using library function
+---------------------------------------------------------------------------------------------
+Coding:
+#include <stdio.h>
+void main()
+{
+    char str[100],upd[100];
+    int i=0;
+    printf("Enter the string ");
+    scanf("%s",str);
+    while(str[i]!='\0')
+    {
+        if (str[i] >= 97 && str[i] <= 122)
+        {
+            upd[i]=str[i]-32;
+        }
+        else if (str[i] >= 65 && str[i] <= 90)
+        {
+            upd[i]=str[i]+32;
+        }
+        i++;
+    }
+    printf("The Converted string is %s",upd);
+}
+------------------------------------------------------------------
+Output:
+Enter the string KsrCT
+The Converted string is kSRct
+---------------------------------------------------------------------------------------------
