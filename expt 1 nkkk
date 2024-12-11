@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main() 
+{
+    char str[100];
+    int i = 0;
+    printf("Enter the string: ");
+    scanf("%s", str);
+    printf("The vowles removed string is ");
+    while (str[i] != '\0') 
+    {
+        if (str[i] != 'A' && str[i] != 'E' && str[i] != 'I' && str[i] != 'O' && str[i] != 'U' && str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u') 
+           {
+            printf("%c",str[i]);
+           }
+        i++;
+    }
+}
