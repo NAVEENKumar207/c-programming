@@ -28,9 +28,9 @@ void main()
 {
  
  char str1[100],str2[100];
- printf("Enter the string First string  ");
+ printf("Enter the First string  ");
  scanf("%s",str1);
- printf("Enter the string Second string  ");
+ printf("Enter the Second string  ");
  scanf("%s",str2);
  int i=0,j=0;
  while(str1[i]!='\0')
@@ -48,8 +48,8 @@ void main()
 }
 --------------------------------------------------------------
 Output:
-Enter the string First string  Naveen
-Enter the string Second string  kumar
+Enter the First string  Naveen
+Enter the Second string  kumar
 Concatenated String is Naveenkumar
 ---------------------------------------------------------------
 Copy one string to another string Without using strcpy function
@@ -61,7 +61,7 @@ void main()
  
  char str1[100];
  char str2[100];
- printf("Enter the string string  ");
+ printf("Enter the string  ");
  scanf("%s",str1);
  int i=0,j=0;
 while(str1[i]!='\0'){
@@ -73,7 +73,7 @@ str2[j]='\0';
 }
 ------------------------------------------------------------------
 Output:
-Enter the string string  ksrct
+Enter the string  ksrct
 The value changed in next array is ksrct
 ------------------------------------------------------------------
 Comaring two String Without using strcmp function
