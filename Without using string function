@@ -110,8 +110,8 @@ Enter the string First string  ksrct
 Enter the string Second string  ksrct
 Strings are same
 Output2:
-Enter the string First string  ksrct
-Enter the string Second string  ksrce
+Enter the First string  ksrct
+Enter the Second string  ksrce
 Strings are not same
 ---------------------------------------------------------
 Reverse of the string Without using string functions
