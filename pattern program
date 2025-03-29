@@ -17,3 +17,64 @@ int main() {
     return 0;
 }
 __________________________________________
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    if(n >= 3){
+        int plusValue = 2;
+        int patternStartingType = 1;
+        for(int overallOutside=0; overallOutside<n; overallOutside++){
+            int overall = 1;
+            int calPlusValue = n-plusValue;
+            if(calPlusValue > 0){
+                for(int plus=0; plus<calPlusValue; plus++){
+                    printf("+ ");
+                    overall++;
+                }
+                plusValue++;
+            }
+            
+            if(overall <= n){
+                int patternType = patternStartingType;
+                if(overall == 1){
+                    patternStartingType++;
+                }
+                if(patternStartingType <= 3){
+                    for(int pattern=0; pattern<overall; pattern++){
+                        if(overall <= n) {
+                            if(patternType == 1){
+                                printf("~ ");
+                                patternType++;
+                                overall++;
+                            }else if(patternType == 2){
+                                printf("* ");
+                                patternType++;
+                                overall++;
+                            }else if(patternType == 3){
+                                printf("~ ");
+                                patternType++;
+                                overall++;
+                                break;
+                            }
+                            
+                        }else {
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if(overall <= n){
+                int calLineValue = (n-overall)+1;
+                for(int line=0; line<calLineValue; line++){
+                    printf("| ");
+                }
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
